@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+    <link rel="stylesheet" href="css/my.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+  <!-- TODO
+
+  * configuration
+
+  * testen am Fernseher
+
+  * li einfaden
+  * li 2 level text kleiner machen
+
+
+  * pdf drucken später
+  -->
+
+
+
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <!-- Folie 1 -->
+        <section>
+          <h1><span style="color: greenyellow">J</span>Rebel</h1>
+          <h3>Reload code changes instantly</h3>
+          <p>
+            <small>Created by Sebastian Trotz</small>
+          </p>
+        </section>
+
+        <!-- Folie 2 -->
+        <section>
+          <h2>Vorstellung</h2>
+          <h3 class="nm">Hintergrund</h3>
+          <ul>
+            <li>Firma ist ZeroTurnaround</li>
+            <ul>
+              <li>2008 gegründet von Jevgeni Kabanov and Toomas Römer</li>
+              <ul>
+                <li>Kabanov's Ph.D. Thema war "Towards a more productive Java EE ecosystem"</li>
+              </ul>
+            </ul>
+            <br>
+            <li>Vertreibt JRebel als Java IDE Plugin</li>
+            <ul>
+              <li>Build- und Redeploy-Phasen im Java EE Entwicklungszylus werden vermieden</li>
+            </ul>
+          </ul>
+        </section>
+
+        <!-- Folie 3 -->
+        <section>
+          <h2>IDE Integration</h2>
+          <h3 class="nm">Eclipse-Plugin</h3>
+          <ul>
+            <li>Im Eclipse-Marketplace herunterladen</li>
+            <ul>
+              <li>es gibt einen neuen View</li>
+              <li>lässt sich sehr einfach konfigurieren</li>
+            </ul>
+            <br>
+            <li>Es ist möglich JRebel 30 Tage auszuprobieren</li>
+          </ul>
+        </section>
+
+        <!-- Folie 4 -->
+        <section>
+          <h2>Bestandsaufnahme</h2>
+          <h3 class="nm">Entwicklung</h3>
+          <ul>
+            <li>Serverstart dauert 2-3 min mit minimalen Produktdaten</li>
+            <ul>
+              <li>verlängert sich abhängig von Grösse der Produkt-XML-Datei</li>
+              <li>mit Backoffice-Intialisierung dauert es fast 15 Minuten</li>
+            </ul>
+            <br>
+            <li>Probleme mit Serverneustarts</li>
+            <ul>
+              <li>Entwickler geriet aus dem Flow</li>
+              <li>Entwickler muss sich anderweitig beschäftigen</li>
+            </ul>
+          </ul>
+        </section>
+
+        <!-- Folie 5 -->
+        <section>
+          <h2>Featureliste - Teil 1</h2>
+          <h3 class="nm">Features</h3>
+          <ul>
+            <li>Changes to method bodies</li>
+            <li>Adding/removing Methods</li>
+            <li>Adding/removing constructors</li>
+            <li>Adding/removing fields</li>
+            <li>Adding/removing classes</li>
+            <li>Adding/removing annotations</li>
+          </ul>
+        </section>
+
+        <!-- Folie 6 -->
+        <section>
+          <h2>Featureliste - Teil 2</h2>
+          <h3 class="nm">Features</h3>
+          <ul>
+            <li>Changing static field value</li>
+            <li>Adding/removing enum values</li>
+            <li>Modifying interfaces</li>
+            <li>Replacing superclass</li>
+            <li>Adding/removing implemented interfaces</li>
+            <li>Initializes new instance fields</li>
+          </ul>
+        </section>
+
+        <!-- Folie 7 -->
+        <section>
+          <h2>JRebel Spring plugin</h2>
+          <h3 class="nm">Spring Integration</h3>
+          <ul>
+            <li>reload Spring dependencies</li>
+            <li>registering new Spring beans</li>
+            <li>adding/removing dependencies</li>
+            <li>adding new MVC controllers and handler methods</li>
+            <li>These can be done using either XML configuration or annotations</li>
+          </ul>
+        </section>
+
+        <!-- Folie 8 -->
+        <section>
+          <h2>Was es uns bringt</h2>
+          <h3 class="nm">Vorteile</h3>
+          <ul>
+            <li>keine unnötigen Unterbrechungen</li>
+            <ul>
+              <li>neue Funktion wurde hinzugefügt und soll getestet werden</li>
+            </ul>
+            <br>
+            <li>schnellere Refactorings</li>
+            <ul>
+              <li>Test der reactorisierten Funktionalität vorher und nachher</li>
+            </ul>
+            <br>
+            <li>spart Zeit</li>
+            <ul>
+              <li>die kann dann für wichtigere Tehmen (z.B Schreiben von Unit-Tests) investiert werden</li>
+            </ul>
+          </ul>
+        </section>
+
+        <!-- Folie 9 -->
+        <section>
+          <h2>Lizenzmodel</h2>
+          <h3 class="nm">Lizenz</h3>
+          <ul>
+            <li>JRebel ist in einem Mietlizenzmodell für 1,2 oder 3 Jahre erhältlich</li>
+            <br>
+            <li>kostet 475$ pro Jahr</li>
+            <br>
+            <li>dedicated oder managed</li>
+            <br>
+            <li><a href="https://zeroturnaround.com/software/jrebel/buy/">https://zeroturnaround.com/software/jrebel/buy/</a></li>
+          </ul>
+        </section>
+
+        <!-- Folie 10 -->
+        <section>
+          <h2>Weiterführendes</h2>
+          <h3 class="nm">Info</h3>
+          <ul>
+            <li><a href="https://de.wikipedia.org/wiki/JRebel">https://de.wikipedia.org/wiki/JRebel</a></li>
+            <li><a href="http://zeroturnaround.com/software/jrebel/learn/faq/">http://zeroturnaround.com/software/jrebel/learn/faq/</a></li>
+            <li><a href="https://zeroturnaround.com/software/jrebel/learn/jrebel-spring-integration/">https://zeroturnaround.com/software/jrebel/learn/jrebel-spring-integration/</a></li>
+            <li><a href="https://zeroturnaround.com/software/jrebel/download/changelog/6-x/">https://zeroturnaround.com/software/jrebel/download/changelog/6-x/</a></li>
+            <li><a href="https://zeroturnaround.com/rebellabs/developer-productivity-report-2015-java-performance-survey-results/">https://zeroturnaround.com/rebellabs/developer-productivity-report-2015-java-performance-survey-results/</a></li>
+          </ul>
+        </section>
+
+        <!-- Folie 11 -->
+        <section>
+          <h2>Vielen Dank für Ihre Aufmerksamkeit!</h2>
+          <h3 class="nm">Diskussion...</h3>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
